@@ -355,7 +355,7 @@ void processLocationData(String location) {
 
   if (response.indexOf("GPS NOT") != -1) {
     Serial.println("No Location data");
-    custom_message =  "  🆘 EMERGENCY 🆘 = http://maps.google.com/maps?q=28.523674+77.574643";
+    custom_message =  " UNABLE TO FETCH LOCATION";
     Send_SMS(custom_message);
   } else {
     int i = 0;
